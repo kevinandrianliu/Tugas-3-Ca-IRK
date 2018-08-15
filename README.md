@@ -3,7 +3,12 @@ Repository Git untuk tugas 3 ca-IRK
 
 Tugas ini berisi aplikasi game Minesweeper di Windows(tidak dapat dibuka di Linux) yang saya buat sendiri. Untuk membuat game ini, saya menggunakan Python versi 3.6 dengan tambahan library Tkinter(sudah terpasang secara otomatis dalam Pythonnya, dengan link: https://www.python.org) dan Pillow versi 5.2(library tambahan yang harus diinstall sendiri, melalui tulisan pip install pillow di Command Prompt). Untuk pembuatan executable file, saya mengikuti tutorial sebagai berikut: https://medium.com/dreamcatcher-its-blog/making-an-stand-alone-executable-from-a-python-script-using-pyinstaller-d1df9170e263, yaitu menginstall pyinstaller dengan mengetik : pip install pyinstaller di Command Prompt dan PyWin32 dengan mengunduh Release 223 di https://github.com/mhammond/pywin32/releases, atau sederhananya langsung memasukkan link berikut di search barnya: https://github.com/mhammond/pywin32/releases/download/b223/pywin32-223.win32-py3.6.exe.
 
-Ukuran board minimal adalah 8 x 8 dan memiliki maksimal berupa nilai maksimal dari bilangan bulat di Python. Ukuran tidak boleh diinput angka selain bilangan bulat(tidak ada pengecekan bilangan float). Terdapat minimal 4 jenis level yang bergantung pada ukuran board, yaitu easy, medium, hard, dan insane.
+Ukuran board minimal adalah 8 x 8 dan memiliki maksimal berupa nilai maksimal dari bilangan bulat di Python. Ukuran tidak boleh diinput angka selain bilangan bulat(tidak ada pengecekan bilangan float). Terdapat minimal 4 jenis level yang bergantung pada ukuran board, yaitu easy, medium, hard, dan insane. Berikut adalah simbol-simbol yang digunakan dalam game ini:
+1. Angka 1-8 menunjukkan jumlah mines yang berada di sekitar cell tersebut.
+2. Karakter ' _ ' menunjukkan cell yang kosong atau tidak ada mines di sekitar cell tersebut.
+3. Karakter ' F ' menunjukkan cell yang di-flag.
+4. Karakter ' X ' menunjukkan cell yang masih belum dibuka atau di-flag.
+5. Tulisan "BOOM" yang berarti pengguna sudah membuka cell yang berisi mine sehingga dinyatakan kalah saat itu juga.
 
 Untuk pengujian, tidak perlu menginstall tambahan library yang disebutkan di atas karena sudah dalam bentuk aplikasi yang dapat langsung dieksekusi.(Jika ternyata tidak dapat dieksekusi, yang perlu diunduh hanya Python 3.6 dan Pillow saja) Untuk versi 3, logo.png dan Minesweeper.py harus diletakkan dalam satu folder yang sama. Pengujian dapat dilakukan dengan double-click pada aplikasi.
 
